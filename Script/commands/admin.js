@@ -34,7 +34,7 @@ module.exports.run = async function({ api, event }) {
 ┃ 📢 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 : 𝗥𝗢𝗖𝗞𝗬_999
 ┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 :‣⃟ 𝐏𝐘ɑ͜͡𝐑𓆪𒄬‣༑༑⃝𝐌๏н͜ɑ͜͡ßßɑ͜͡𝐓⸙ 𝐑ɑ͜͡ƞ𝐃ɪ̽͜𓆪»𝐑๏ƞɑ͜͡𑁍 𒄬‣𝐅ɪ̽͜ƞɠɼs͜͡ ⃝𝐊ɼɑ͜͡༑༑⃝ɑ͜͡𝐁н͜ɪ̽͜⸙𒄬‣ ⃝𝐌ɑ͜͡𝐊ɑ͜͡𓆪»𝐇ɑ͜͡ɪ̽※※※※ ❮𝐌𝐒❯ 𝐑𝐎𝐂𝐊𝐘❯ 父︻दु/⃦̸̸̵̵͇̿̿̿̿Ω̵̵͇̿̿๏ـــــــــــــــــــــــــــــــــــــــــــ๏๏๏⸙➊②➌𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺』 《𝐈𝐃
 ┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 :https://www.facebook.com/pyrmn
-┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : https://www.facebook.com/rocky.633251
+┃ 🌐 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : https://graph.facebook.com/61564434359130
 ┣━━━━━━━━━━━━━━━━━━━━━┫
 ┃ 🕒 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐓𝐢𝐦𝐞:  ${time}
 ┗━━━━━━━━━━━━━━━━━━━━━┛
@@ -42,7 +42,7 @@ module.exports.run = async function({ api, event }) {
         attachment: fs.createReadStream(__dirname + "/cache/1.png")
     }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.png"));
   
-    return request(encodeURI(`https://www.facebook.com/rocky.633251/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`))
+    return request(encodeURI(`https://graph.facebook.com/61564434359130/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`))
         .pipe(fs.createWriteStream(__dirname + '/cache/1.png'))
         .on('close', () => callback());
 };
